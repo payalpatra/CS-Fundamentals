@@ -124,6 +124,14 @@ Multilevel Queue Scheduling - A multi-level queue scheduling algorithm partition
 A deadlock is a condition where two or more transactions are waiting indefinitely for one another to give up locks.
 
 ### Difference between primitive and non-primitive in OS?
+Sl | Preemitive  | Non- Preemptive | 
+--- | --- | --- | 
+Basic |	In this resources(CPU Cycle) are allocated to a process for a limited time.| Once resources(CPU Cycle) are allocated to a process, the process holds it till it completes its burst time or switches to waiting state.|
+Interrupt |Process can be interrupted in between. |Process can not be interrupted until it terminates itself or its time is up.|
+Starvation |If a process having high priority frequently arrives in the ready queue, a low priority process may starve.|If a process with a long burst time is running CPU, then later coming process with less CPU burst time may starve.|
+Overhead |	It has overheads of scheduling the processes. | It does not have overheads.|
+Flexibility| Flexible | Rigid |
+Cost	| associated	| no cost associated
 
 ### Difference between Kernel and OS?
 * **Kernel** - Kernel is a system program that controls all programs running on the computer. The kernel is basically a bridge between the software and the hardware of the system.
