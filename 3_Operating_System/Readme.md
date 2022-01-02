@@ -66,7 +66,7 @@ Ex - Responding to emails while listening to a podcast.
 
 ### Difference between multitasking and multiprogramming?
 
-Sl | Multiprogramming  | Multi-tasking     | 
+Sl | Multi-Programming  | Multi-Tasking     | 
 --- | --- | --- | 
 1 |The concept of Context Switching is used.| The concept of Context Switching and Time Sharing is used.|
 2 |In a multiprogramming system, the operating system simply switches to, and executes, another job when the current job needs to wait.  |The processor is typically used in time-sharing mode. Switching happens when either allowed time expires or where there is another reason the current process needs to wait (for example a process needs to do IO).|
@@ -123,8 +123,8 @@ Multilevel Queue Scheduling - A multi-level queue scheduling algorithm partition
 
 A deadlock is a condition where two or more transactions are waiting indefinitely for one another to give up locks.
 
-### Difference between primitive and non-primitive in OS?
-Sl | Preemitive  | Non- Preemptive | 
+### Difference between Preemptive  and Non-Preemptive  in OS?
+Sl | Preemptive   | Non-Preemptive  | 
 --- | --- | --- | 
 Basic |	In this resources(CPU Cycle) are allocated to a process for a limited time.| Once resources(CPU Cycle) are allocated to a process, the process holds it till it completes its burst time or switches to waiting state.|
 Interrupt |Process can be interrupted in between. |Process can not be interrupted until it terminates itself or its time is up.|
