@@ -56,6 +56,9 @@ Process Control Block(PCB) contains information about processes. For example pro
 **Main memory** - The main memory in a computer is RAM (Random Access Memory). It is also known as primary memory or read-write memory or internal memory. The programs and data that the CPU requires during the execution of a program are stored in this memory. <br/>
 **Secondary memory** - Secondary memory in a computer is a storage device that can store data and programs. It is also known as external memory or additional memory or backup memory or auxiliary memory. Such storage devices are capable of storing high-volume data. Storage devices can be hard drives, USB flash drives, CDs, etc.
 
+### What is virtual memory?
+This is common while the memory cost of a software exceeds the space of a computer. The reason why this can be implemented is because of the virtual memory. It divides a program into several pieces and allows them to be temporarily stored in the external memory (disk) before the program needs it. By doing this, the program will regard itself to own a piece of continuous space.
+
 ### Difference between Process and Thread?
 Sl | Process  | Thread   | 
 --- | --- | --- | 
@@ -64,7 +67,7 @@ Sl | Process  | Thread   |
 3 |It takes more time for creation.|It takes less time for creation.|
 4 |It also takes more time for context switching. |It takes less time for context switching.|
 5 |Process is less efficient in term of communication. |Thread is more efficient in term of communication.|
-5 |	Process switching uses interface in operating system. |Thread switching does not require to call a operating system and cause an interrupt to the kernel.|
+6 |	Process switching uses interface in operating system. |Thread switching does not require to call a operating system and cause an interrupt to the kernel.|
 
 **Multiprogramming** – A computer running more than one program at a time (like running Excel and Firefox simultaneously). <br/>
 **Multiprocessing** – A computer using more than one CPU at a time. 
@@ -131,6 +134,16 @@ Multilevel Queue Scheduling - A multi-level queue scheduling algorithm partition
 
 A deadlock is a condition where two or more transactions are waiting indefinitely for one another to give up locks.
 
+* **Resource Deadlock** - Occurs when processes are trying to get exclusive access to devices, files, locks, servers, or other resources. ...
+* **Communication Deadlock** - This is a situation where each process in the group waits for some process to communicate with it, but no other process is attempting communication.
+
+#### Necessary Conditions for Deadlock
+
+* **Mutual Exclusion** - One or more than one resource are non-shareable (Only one process can use at a time) 
+* **Hold and Wait** - A process is holding at least one resource and waiting for resources. 
+* **No Preemption** - A resource cannot be taken from a process unless the process releases the resource. 
+* **Circular Wait** - A set of processes are waiting for each other in circular form. 
+
 ### Difference between Preemptive  and Non-Preemptive  in OS?
 Sl | Preemptive   | Non-Preemptive  | 
 --- | --- | --- | 
@@ -155,3 +168,21 @@ Cost	| associated	| no cost associated |
 ### What is paging in the operating system?
 
 In Operating Systems, Paging is a storage mechanism used to retrieve processes from the secondary storage into the main memory in the form of pages
+
+### How do processes communicate with each other ?
+
+There are six ways of inter-process communications (IPC):
+
+* **Pipe** - It enables the output of a process become the input of another process that has a common origin, i.e., the same process. The data flow by using pipe is one direction only (e.g., command “|” in Linux).<br/>
+
+* **Names pipe** - This allows communication of processes from different origin. It follows first in first out (FIFO) rules.
+
+* **Message queueing** - Both types of pipes are inefficient as the process that sends data into the buffer needs to wait until another process retrieves it. Message queueing is able to solve this problem, which producers do not need to wait for consumers retrieving data.
+
+* **Shared memory** - There is also a disadvantage of message queueing, which is time-consuming while the size of sending data is too large. Hence an idea of shared memory came up. It allows multiple processes access the same area of memory. This is the most efficient way as each process can see the update of data immediately.
+
+* **Semaphore** - The biggest issue of shared memory is that multiple processes will compete for resources. Semaphore is a program counter used in process synchronization to control the number of processes accessing shared memory and avoid race condition. It represents how much resources are available in shared memory.
+
+* **Socket** - All communication methods mentioned above are based on only one device. Socket is an interface which allows communicating between multiple device remotely. It is mainly used in the client/server communication.
+
+
