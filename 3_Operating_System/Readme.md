@@ -131,7 +131,7 @@ Interrupt |Process can be interrupted in between. |Process can not be interrupte
 Starvation |If a process having high priority frequently arrives in the ready queue, a low priority process may starve.|If a process with a long burst time is running CPU, then later coming process with less CPU burst time may starve.|
 Overhead |	It has overheads of scheduling the processes. | It does not have overheads.|
 Flexibility| Flexible | Rigid |
-Cost	| associated	| no cost associated
+Cost	| associated	| no cost associated |
 
 ### Difference between Kernel and OS?
 * **Kernel** - Kernel is a system program that controls all programs running on the computer. The kernel is basically a bridge between the software and the hardware of the system.
