@@ -45,7 +45,7 @@ A program is a set of instructions designed to complete a specific task.
 
 ### What is Process?
 
-Process means any program is in execution
+Process means any program in execution.A process may be made up of multiple threads of execution that execute instructions concurrently.
 
 ### What is a Process Control Block?
 
@@ -57,10 +57,18 @@ Process Control Block(PCB) contains information about processes. For example pro
 **Secondary memory** - Secondary memory in a computer is a storage device that can store data and programs. It is also known as external memory or additional memory or backup memory or auxiliary memory. Such storage devices are capable of storing high-volume data. Storage devices can be hard drives, USB flash drives, CDs, etc.
 
 ### Difference between Process and Thread?
+Sl | Process  | Thread   | 
+--- | --- | --- | 
+1 |Process means any program is in execution.| Thread means segment of a process.|
+2 |Process takes more time to terminate. |Thread takes less time to terminate.|
+3 |It takes more time for creation.|It takes less time for creation.|
+4 |It also takes more time for context switching. |It takes less time for context switching.|
+5 |Process is less efficient in term of communication. |Thread is more efficient in term of communication.|
+5 |	Process switching uses interface in operating system. |Thread switching does not require to call a operating system and cause an interrupt to the kernel.|
 
-**Multiprogramming** – A computer running more than one program at a time (like running Excel and Firefox simultaneously). 
+**Multiprogramming** – A computer running more than one program at a time (like running Excel and Firefox simultaneously). <br/>
 **Multiprocessing** – A computer using more than one CPU at a time. 
-Ex - UNIX Operating system
+Ex - UNIX Operating system<br/>
 **Multitasking** – Tasks sharing a common resource (like 1 CPU)
 Ex - Responding to emails while listening to a podcast.
 
