@@ -69,7 +69,7 @@ Object-oriented programming is the programming paradigm that is defined using ob
 1. Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation.
 2. Hiding the implementation and displaying only the functionality to the users.
 
-### Advantages 
+#### Advantages 
 1. It reduces the complexity of viewing things.
 2. Reduces the duplication of the code
 
@@ -111,11 +111,14 @@ Like a man at the same time is a father, a husband, an employee. So the same per
  Types of Inheritance
  
 * **Single inheritance** - When a class inherits from a single class, it is known as a single inheritance
-* **Multiple inheritances** - Multiple inheritances come into the picture when a class inherits from more than one base class. Parent 1 && Parent2 → child
-* **Multilevel inheritance** - When there is a chain of inheritance, it is known as multilevel inheritance. Example: Animal →  Dog → Puppy
+* **Multiple inheritances** - Multiple inheritances come into the picture when a class inherits from more than one base class. <br/>
+Parent 1 && Parent2 → child
+* **Multilevel inheritance** - When there is a chain of inheritance, it is known as multilevel inheritance. <br/>
+Example: Animal →  Dog → Puppy
 Puppy Inherits from the Dog Class, Dog class inherits from the Class Animal. 
  
-* **Hierarchical inheritance** - When two or more classes inherit a single class, it is known as hierarchical inheritance. Example: Animal → Dog = Cats
+* **Hierarchical inheritance** - When two or more classes inherit a single class, it is known as hierarchical inheritance. <br/>
+Example: Animal → Dog = Cats
 * **Hybrid inheritance** - Hybrid inheritance is a combination of multiple and multi-level inheritances.
 
 #### Advantages 
@@ -139,3 +142,9 @@ SL | Overloading  | Overriding   |
 4 |Method overloading may or may not require inheritance. |Method overriding always needs inheritance.|
 5 |In method overloading, methods must have the same name and different signatures. |In method overriding, methods must have the same name and same signature.|
 6 |	In method overloading, the return type can or can not be the same, but we just have to change the parameter. |In method overriding, the return type must be the same or co-variant.|
+
+### Overloading and Overriding in JavaScript
+
+JavaScript does not support function overloading natively. If we will add functions with the same name and different arguments, it considers the last defined function. <br/>
+
+It is true that JavaScript supports overriding not overloading. When you define multiple functions which has the same name, the last one defined will override all the previously defined ones and every time when you invoke a function, the last defined one will get executed.
