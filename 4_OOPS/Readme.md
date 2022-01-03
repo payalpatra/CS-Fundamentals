@@ -51,100 +51,246 @@ Class - color. Red - an object of color<BR/>
 - **Protected** - The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.<BR/>
 - **Public** - The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.<BR/>
 
-* **Protected** - The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.<BR/>
-* **Public** - The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.<BR/>
-
 ### What we use object-oriented programming?
 
 Object-oriented programming is the programming paradigm that is defined using objects. Objects can be considered as real-world instances of entities like class, that have some characteristics and behaviors. <BR/>
 
-* OOPs helps users to understand the software easily, although they don’t know the actual implementation.
-* With OOPs, the readability, understandability, and maintainability of the code increases multifold.
-* Even very big software can be easily written and managed easily using OOPs.
-
+- OOPs helps users to understand the software easily, although they don’t know the actual implementation.
+- With OOPs, the readability, understandability, and maintainability of the code increases multifold.
+- Even very big software can be easily written and managed easily using OOPs.
 
 ### What are the main features of OOPs?
 
 ### Data Abstraction
+
 1. Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation.
 2. Hiding the implementation and displaying only the functionality to the users.
 
-#### Advantages 
+#### Advantages
+
 1. It reduces the complexity of viewing things.
 2. Reduces the duplication of the code
 
 #### Real Life Example
+
 Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the speed of the car or applying brakes will stop the car but he does not know about how on pressing the accelerator the speed is actually increasing, he does not know about the inner mechanism of the car or the implementation of the accelerator, brakes, etc in the car.
 
 ### Encapsulation
+
 It describes the idea of bundling data and methods that work on that data within one unit.
 
-#### Advantages 
-1. Encapsulation protects an object from unwanted access by clients. 
+#### Advantages
+
+1. Encapsulation protects an object from unwanted access by clients.
 2. Simplifies the maintenance of the application
 
 #### Real Life Example
-A Real-Life Example of Encapsulation is a School Bag. 
 
+A Real-Life Example of Encapsulation is a School Bag.
 
 ### Polymorphism
+
 The word polymorphism means having many forms. It describes the concept that different classes can be used with the same interface.
 Polymorphism is the ability of any data to be processed in more than one form. <br/>
 
 Polymorphism is divided into two types: <br/>
 
-* **Compile Time Polymorphism** - Compile time polymorphism, also known as Static Polymorphism, refers to the type of Polymorphism that happens at compile time. What it means is that the compiler decides what shape or value has to be taken by the entity in the picture. <br/>
-* **Runtime Polymorphism** - Runtime polymorphism, also known as Dynamic Polymorphism, refers to the type of Polymorphism that happens at the run time. What it means is it can't be decided by the compiler. Therefore what shape or value has to be taken depends upon the execution. Hence the name Runtime Polymorphism.
+- **Compile Time Polymorphism** - Compile time polymorphism, also known as Static Polymorphism, refers to the type of Polymorphism that happens at compile time. What it means is that the compiler decides what shape or value has to be taken by the entity in the picture. <br/>
+- **Runtime Polymorphism** - Runtime polymorphism, also known as Dynamic Polymorphism, refers to the type of Polymorphism that happens at the run time. What it means is it can't be decided by the compiler. Therefore what shape or value has to be taken depends upon the execution. Hence the name Runtime Polymorphism.
 
-#### Advantages 
+#### Advantages
 
 1. It helps the programmer to reuse the codes, i.e. classes once written, tested and implemented can be reused as required. Saves a lot of time.
 2. A single variable can be used to store multiple data types.
 
 #### Real Life Example
+
 Like a man at the same time is a father, a husband, an employee. So the same person possesses different behavior in different situations. This is called polymorphism.
 
-
 ### Inheritance
- Inheritance is a feature of OOPs which allows subclasses classes to inherit properties from the parent class. <BR/>
- 
- Types of Inheritance
- 
-* **Single inheritance** - When a class inherits from a single class, it is known as a single inheritance
-* **Multiple inheritances** - Multiple inheritances come into the picture when a class inherits from more than one base class. <br/>
-Parent 1 && Parent2 → child
-* **Multilevel inheritance** - When there is a chain of inheritance, it is known as multilevel inheritance. <br/>
-Example: Animal →  Dog → Puppy
-Puppy Inherits from the Dog Class, Dog class inherits from the Class Animal. 
- 
-* **Hierarchical inheritance** - When two or more classes inherit a single class, it is known as hierarchical inheritance. <br/>
-Example: Animal → Dog = Cats
-* **Hybrid inheritance** - Hybrid inheritance is a combination of multiple and multi-level inheritances.
 
-#### Advantages 
+Inheritance is a feature of OOPs which allows subclasses classes to inherit properties from the parent class. <BR/>
+
+Types of Inheritance
+
+- **Single inheritance** - When a class inherits from a single class, it is known as a single inheritance
+- **Multiple inheritances** - Multiple inheritances come into the picture when a class inherits from more than one base class. <br/>
+  Parent 1 && Parent2 → child
+- **Multilevel inheritance** - When there is a chain of inheritance, it is known as multilevel inheritance. <br/>
+  Example: Animal → Dog → Puppy
+  Puppy Inherits from the Dog Class, Dog class inherits from the Class Animal.
+
+- **Hierarchical inheritance** - When two or more classes inherit a single class, it is known as hierarchical inheritance. <br/>
+  Example: Animal → Dog = Cats
+- **Hybrid inheritance** - Hybrid inheritance is a combination of multiple and multi-level inheritances.
+
+#### Advantages
+
 The main advantages of inheritance are code reusability and readability. When a child class inherits the properties and functionality of the parent class, we need not to write the same code again in the child class. This makes it easier to reuse the code, makes us write less code and the code becomes much more readable.
 
 #### Real Life Example
+
 If there is a class such as ‘vehicle’, other classes like ‘car’, ‘bike’, etc can inherit common properties from the vehicle class.
 
-
-### What is Overloading and Overriding? 
+### What is Overloading and Overriding?
 
 When two or more methods in the same class have the same name but different parameters, it's called Overloading. <BR/>
 
 When the method name and parameters are the same in the superclass and the child class, it's called Overriding. <BR/>
 
-SL | Overloading  | Overriding   | 
---- | --- | --- | 
-1 | Method overloading is a compile-time polymorphism.| Method overriding is a run-time polymorphism.|
-2 |It helps to increase the readability of the program.|It is used to grant the specific implementation of the method which is already provided by its parent class or superclass.|
-3 |	It occurs within the class.|It is performed in two classes with inheritance relationships.|
-4 |Method overloading may or may not require inheritance. |Method overriding always needs inheritance.|
-5 |In method overloading, methods must have the same name and different signatures. |In method overriding, methods must have the same name and same signature.|
-6 |	In method overloading, the return type can or can not be the same, but we just have to change the parameter. |In method overriding, the return type must be the same or co-variant.|
+| SL  | Overloading                                                                                                  | Overriding                                                                                                                 |
+| --- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Method overloading is a compile-time polymorphism.                                                           | Method overriding is a run-time polymorphism.                                                                              |
+| 2   | It helps to increase the readability of the program.                                                         | It is used to grant the specific implementation of the method which is already provided by its parent class or superclass. |
+| 3   | It occurs within the class.                                                                                  | It is performed in two classes with inheritance relationships.                                                             |
+| 4   | Method overloading may or may not require inheritance.                                                       | Method overriding always needs inheritance.                                                                                |
+| 5   | In method overloading, methods must have the same name and different signatures.                             | In method overriding, methods must have the same name and same signature.                                                  |
+| 6   | In method overloading, the return type can or can not be the same, but we just have to change the parameter. | In method overriding, the return type must be the same or co-variant.                                                      |
 
 ### Overloading and Overriding in JavaScript
 
 JavaScript does not support function overloading natively. If we will add functions with the same name and different arguments, it considers the last defined function. <br/>
 
 It is true that JavaScript supports overriding not overloading. When you define multiple functions which has the same name, the last one defined will override all the previously defined ones and every time when you invoke a function, the last defined one will get executed.
+
+### Code Examples
+
+### Data Abstraction
+
+JavaScript is a weakly typed language and does not have the classical built-in support for abstraction like OOP languages. Instead, JavaScript has the capability to support OOP, and thus can achieve OOP functionalities, which is known as Object Oriented JavaScript (OOJS). Data abstraction can be achieved by inheritance and composition. <br/>
+
+In JavaScript, prototypes and closures can help us accomplish data abstraction.
+
+```sh
+
+function Employee(name, age, baseSalary) {
+    this.name = name;
+    this.age = age;
+    this.baseSalary = baseSalary
+
+    let monthlyBonus = 1000;
+
+    // This is not exposed to the user
+    let calculateMonthlyBonus = function () {
+        let finalSalary = baseSalary + monthlyBonus
+        console.log("Final Salary is : ", finalSalary)
+    }
+
+    this.getEmpDetails = function () {
+        console.log("Name: " + this.name,
+            "Age: " + this.age,
+            "baseSalary: " + this.baseSalary)
+    }
+    calculateMonthlyBonus()
+}
+
+let emp1 = new Employee("John", 30, 2000);
+emp1.getEmpDetails()
+
+OUTPUT : Final Salary is :  3000 
+Name: John Age: 30 baseSalary: 2000
+
+```
+
+### Encapsulation
+
+It describes the idea of bundling data and methods that work on that data within one unit.
+
+```sh
+
+class Employee {
+    setEmpDetails(name, id, phone) {
+        this.name = name;
+        this.id = id;
+        this.phone = phone;
+    }
+
+    getEmpName() {
+        console.log(this.name);
+    }
+    getEmpId() {
+        console.log(this.id);
+    }
+    getEmpPhoneNo() {
+        console.log(this.phone);
+    }
+}
+
+let emp1 = new Employee()
+emp1.setEmpDetails("John", 319, 9788786086)
+emp1.getEmpName();
+
+OUTPUT : John
+
+```
+
+### Polymerphism
+
+It is the ability to create a variable , a function or an object that has more than one form.
+
+```sh
+
+class Animal{
+
+    constructor(name){
+        this.name = name;
+    }
+
+    eats(){
+        console.log(this.name, "eat food")
+    }
+}
+
+
+class Alligator extends Animal{
+
+    eats(){
+        console.log(this.name, "eat fishes")
+    }
+}
+
+let murphy = new Alligator("Murphy");
+murphy.eats()
+
+OUTPUT : Murphy eats fishes
+
+```
+
+### Inheritance
+
+```sh
+
+class Car {
+    setName(name) {
+        this.name = name;
+    }
+
+    startEngine() {
+        console.log("Engine started For " + this.name);
+    }
+    stopEngine() {
+        console.log("Engine stopped For " + this.name);
+    }
+}
+
+class Toyota extends Car {
+
+    topSpeed(speed) {
+        console.log("Top Speed For " + this.name + " is " + speed);
+    }
+}
+
+let myCar = new Toyota();
+myCar.setName("Camry");
+myCar.startEngine()
+myCar.stopEngine()
+myCar.topSpeed(200)
+
+
+OUTPUT :
+Engine started For Camry
+Engine stopped For Camry
+Top Speed For Camry is 200
+
+```
+
