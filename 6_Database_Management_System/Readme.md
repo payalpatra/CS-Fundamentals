@@ -1,6 +1,7 @@
 ## Types of DBMS: 
 * Hierarchical
-* Network, Rational
+* Network
+* Rational
 * Object-Oriented
 
 ### What is DBMS?
