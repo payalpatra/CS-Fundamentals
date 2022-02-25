@@ -38,6 +38,16 @@ Physical Data Independence: Physical data independence can be defined as the cap
 * **Provides backup and recovery facility** - It can be configured to automatically create the backup of the data and restore the data in the database whenever required.
 * **Data Security** - DBMS provides the necessary tools to make the storage and transfer of data more reliable and secure. Authentication (the process of giving restricted access to a user) and encryption (encrypting sensitive data such as OTP, credit card information, etc.) are some popular tools used to secure data in a DBMS.
 
+###  Explain Types of Keys ?
+* **Super Key** - A set of one or more attributes , that , taken collectively, allow us to  uniquely identify a tuple in the relation. 
+* **Candidate Key** - Candidate Key is a minimal superkey for which no proper subset is  a superkey.
+* **Primary Key** - One of the candidate key arbitrarily chosen by the database designer  as a principle means of identifying tuples within a relation. 
+* **Alternate Key** - It is a candidate key which is not a primary key. 
+* **Foreign Key** - Foreign Key of relation R1 is a set of attributes of R1 which is a  primary key of another relation R2. It is said to be referring to the primary key of R2  so that for any tuple of R1, the value of the foreign key must also be present in some  tuple in relation R2. 
+
+### What is the difference between primary key and unique  constraints?
+Primary key cannot have any NULL value while the unique Key can have only one  null value. 
+
 ### What is Deadlock in DBMS ?
 
 In a database, a deadlock is an unwanted situation in which two or more transactions are waiting indefinitely for one another to give up locks. Deadlock is said to be one of the most feared complications in DBMS as it brings the whole system to a Halt.
